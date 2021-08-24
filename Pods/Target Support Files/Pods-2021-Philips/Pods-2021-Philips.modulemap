@@ -1,0 +1,6 @@
+framework module Pods_2021_Philips {
+  umbrella header "Pods-2021-Philips-umbrella.h"
+
+  export *
+  module * { export * }
+}
