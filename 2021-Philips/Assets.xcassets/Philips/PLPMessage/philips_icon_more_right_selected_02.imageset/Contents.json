@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "philips_icon_more_right_selected_02.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "philips_icon_more_right_selected_02@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "philips_icon_more_right_selected_02@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

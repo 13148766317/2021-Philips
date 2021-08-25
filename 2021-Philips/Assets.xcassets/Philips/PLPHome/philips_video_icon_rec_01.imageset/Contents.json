@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "philips_video_icon_rec_01.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "philips_video_icon_rec_01@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "philips_video_icon_rec_01@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

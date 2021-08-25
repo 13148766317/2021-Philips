@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="PLPOperationRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfN-9I-Gyz">
+                        <rect key="frame" x="10" y="41.5" width="10" height="10"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="cHn-G6-nrJ"/>
+                            <constraint firstAttribute="width" constant="10" id="gJ5-2i-lPh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小明" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCw-42-QU7">
+                        <rect key="frame" x="40" y="26.5" width="110" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="66x-zg-Zm4"/>
+                            <constraint firstAttribute="height" constant="40" id="XAB-jH-pDh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码开锁" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90b-In-WH9">
+                        <rect key="frame" x="150" y="26.5" width="130" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="CTB-69-8xP"/>
+                            <constraint firstAttribute="height" constant="40" id="hoA-r9-RfJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DU-SM-ZGV">
+                        <rect key="frame" x="347" y="36" width="40" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="F5o-74-PtI"/>
+                            <constraint firstAttribute="width" constant="40" id="qmA-l5-UQK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预警信息" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw5-01-tbk">
+                        <rect key="frame" x="40" y="26.5" width="297" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DAM-Ra-7pp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0DU-SM-ZGV" secondAttribute="trailing" constant="10" id="0iX-NW-cde"/>
+                    <constraint firstItem="0DU-SM-ZGV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GXB-Qr-36F"/>
+                    <constraint firstItem="MCw-42-QU7" firstAttribute="leading" secondItem="SfN-9I-Gyz" secondAttribute="trailing" constant="20" id="Hqf-f3-1zQ"/>
+                    <constraint firstItem="hw5-01-tbk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I3C-RK-6Ki"/>
+                    <constraint firstItem="0DU-SM-ZGV" firstAttribute="leading" secondItem="hw5-01-tbk" secondAttribute="trailing" constant="10" id="JO5-wz-FNI"/>
+                    <constraint firstItem="SfN-9I-Gyz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SP5-TC-QJJ"/>
+                    <constraint firstItem="SfN-9I-Gyz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SSE-Dl-oRc"/>
+                    <constraint firstItem="90b-In-WH9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SbV-UQ-dqo"/>
+                    <constraint firstItem="MCw-42-QU7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cTA-Ly-imw"/>
+                    <constraint firstItem="hw5-01-tbk" firstAttribute="leading" secondItem="SfN-9I-Gyz" secondAttribute="trailing" constant="20" id="lda-zF-LQq"/>
+                    <constraint firstItem="90b-In-WH9" firstAttribute="leading" secondItem="MCw-42-QU7" secondAttribute="trailing" id="mM7-ud-bb6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="alarmRecLabel" destination="hw5-01-tbk" id="Wgh-mN-zAD"/>
+                <outlet property="headMarkView" destination="SfN-9I-Gyz" id="pod-zs-eRl"/>
+                <outlet property="timerLabel" destination="0DU-SM-ZGV" id="3n1-Me-vMH"/>
+                <outlet property="unlockModeLabel" destination="90b-In-WH9" id="M1M-T7-kwp"/>
+                <outlet property="userNameLabel" destination="MCw-42-QU7" id="xNN-J6-Y9P"/>
+            </connections>
+            <point key="canvasLocation" x="-424" y="-35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

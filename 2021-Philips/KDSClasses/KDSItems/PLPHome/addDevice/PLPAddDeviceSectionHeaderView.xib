@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PLPAddDeviceSectionHeaderView">
+            <connections>
+                <outlet property="subContentView" destination="iN0-l3-epB" id="o2J-Kd-pFu"/>
+                <outlet property="title" destination="xdE-Kf-afv" id="q2J-a6-uMb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="智能锁1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-Kf-afv">
+                    <rect key="frame" x="189" y="14.5" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qum-73-2UF" userLabel="rightView">
+                    <rect key="frame" x="267" y="24.5" width="153" height="1"/>
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xl2-aZ-b25"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-nf-7j8" userLabel="leftView">
+                    <rect key="frame" x="18" y="24.5" width="153" height="1"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="weG-bR-Ba7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="xdE-Kf-afv" firstAttribute="leading" secondItem="Ga6-nf-7j8" secondAttribute="trailing" constant="18" id="3Mj-p7-Bvr"/>
+                <constraint firstItem="qum-73-2UF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4W9-6g-ZhZ"/>
+                <constraint firstItem="xdE-Kf-afv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N7l-su-hqj"/>
+                <constraint firstAttribute="trailing" secondItem="qum-73-2UF" secondAttribute="trailing" constant="18" id="dTZ-LE-vYS"/>
+                <constraint firstItem="Ga6-nf-7j8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fyO-Za-bKL"/>
+                <constraint firstItem="qum-73-2UF" firstAttribute="leading" secondItem="xdE-Kf-afv" secondAttribute="trailing" constant="18" id="q1C-yW-vCt"/>
+                <constraint firstItem="xdE-Kf-afv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qKf-rq-sJS"/>
+                <constraint firstItem="Ga6-nf-7j8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="tbK-Nh-vxl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="100.00000000000001" y="-187.5"/>
+        </view>
+    </objects>
+</document>

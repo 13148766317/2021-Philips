@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PLPDeviceDashboardWiFiSmartLockView">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="productViewType">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionsView" destination="rdh-PN-i97" id="ZAt-Xb-sgC"/>
+                <outlet property="btnModelHelp" destination="58Q-UU-tVf" id="bm9-Se-EXn"/>
+                <outlet property="btnOpenVideo" destination="Wfr-0V-uuo" id="yiz-P5-pjJ"/>
+                <outlet property="contentView" destination="jQa-e5-5bg" id="KGI-LO-xal"/>
+                <outlet property="ivBattery" destination="Chv-wQ-8jZ" id="Hbe-ro-KBV"/>
+                <outlet property="ivDevice" destination="Bow-Lp-lFJ" id="gbp-Ao-4wO"/>
+                <outlet property="ivWiFi" destination="c3L-NJ-vzZ" id="ucP-t3-pcE"/>
+                <outlet property="labModel" destination="jzL-19-LLY" id="r6b-EM-LUB"/>
+                <outlet property="labSubTitle" destination="Ogf-YQ-EqU" id="TxR-QO-BJI"/>
+                <outlet property="layoutConstraintActionsCollectionViewHeight" destination="w0n-z0-mHK" id="Gwi-fx-lq7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jQa-e5-5bg">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bow-Lp-lFJ">
+                    <rect key="frame" x="127" y="213.5" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="1la-Qy-fcK"/>
+                        <constraint firstAttribute="width" constant="160" id="22w-WO-82E"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_home_iocn_battery" translatesAutoresizingMaskIntoConstraints="NO" id="Chv-wQ-8jZ">
+                    <rect key="frame" x="44" y="60" width="20" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="PUp-Ok-TMj"/>
+                        <constraint firstAttribute="height" constant="18" id="s3j-j8-F46"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_home_iocn_wifi" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-NJ-vzZ">
+                    <rect key="frame" x="16" y="60" width="20" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="4kk-uI-sUK"/>
+                        <constraint firstAttribute="height" constant="18" id="MtV-WH-adN"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="vaO-dJ-tyg"/>
+                        <constraint firstAttribute="width" constant="20" id="zZH-5d-NjR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.03.29  10:00   小明指纹00开锁" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-YQ-EqU">
+                    <rect key="frame" x="40" y="405.5" width="334" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-PN-i97" customClass="PLPDeviceUIActionsCollectionView">
+                    <rect key="frame" x="0.0" y="704" width="414" height="124"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="w0n-z0-mHK"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iro-GJ-TNZ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Lw-aB4" userLabel="referView">
+                    <rect key="frame" x="202" y="78" width="10" height="626"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="kqA-Ja-YKo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正常模式" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-19-LLY">
+                    <rect key="frame" x="307.5" y="60" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_equipment_icon_help" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-wD-4jg">
+                    <rect key="frame" x="381" y="60" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="17" id="JAu-lJ-CGv"/>
+                        <constraint firstAttribute="height" constant="17" id="k1L-EK-IPC"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58Q-UU-tVf">
+                    <rect key="frame" x="369" y="44" width="45" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="un4-gJ-QHE"/>
+                    </constraints>
+                    <connections>
+                        <action selector="btnModelHelpAction:" destination="-1" eventType="touchUpInside" id="UJw-qV-91E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-0V-uuo">
+                    <rect key="frame" x="127" y="213.5" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="R5w-gu-3KF"/>
+                        <constraint firstAttribute="height" constant="160" id="erw-ax-UY7"/>
+                    </constraints>
+                    <state key="normal" image="philips_equipment_icon_video"/>
+                    <connections>
+                        <action selector="btnOpenVideoAction:" destination="-1" eventType="touchUpInside" id="iws-46-bYp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Z2o-5A-vQE"/>
+            <constraints>
+                <constraint firstItem="dp8-Lw-aB4" firstAttribute="top" secondItem="c3L-NJ-vzZ" secondAttribute="bottom" id="0Ih-CO-Wrx"/>
+                <constraint firstItem="Wfr-0V-uuo" firstAttribute="centerX" secondItem="dp8-Lw-aB4" secondAttribute="centerX" id="1o3-5Y-LXe"/>
+                <constraint firstItem="58Q-UU-tVf" firstAttribute="top" secondItem="Z2o-5A-vQE" secondAttribute="top" id="8Ji-Pa-gUk"/>
+                <constraint firstItem="jzL-19-LLY" firstAttribute="trailing" secondItem="ZHa-wD-4jg" secondAttribute="leading" constant="-16" id="Azr-ri-kIA"/>
+                <constraint firstItem="ZHa-wD-4jg" firstAttribute="top" secondItem="Z2o-5A-vQE" secondAttribute="top" constant="16" id="DdN-w6-Z2e"/>
+                <constraint firstItem="dp8-Lw-aB4" firstAttribute="centerX" secondItem="jQa-e5-5bg" secondAttribute="centerX" id="EbM-lx-TQ5"/>
+                <constraint firstItem="Ogf-YQ-EqU" firstAttribute="trailing" secondItem="Z2o-5A-vQE" secondAttribute="trailing" constant="-40" id="U8r-Bm-hmc"/>
+                <constraint firstItem="58Q-UU-tVf" firstAttribute="leading" secondItem="jzL-19-LLY" secondAttribute="trailing" constant="4" id="URs-JP-ih0"/>
+                <constraint firstItem="Bow-Lp-lFJ" firstAttribute="centerY" secondItem="dp8-Lw-aB4" secondAttribute="centerY" multiplier="0.75" id="UsY-d0-5dK"/>
+                <constraint firstItem="Chv-wQ-8jZ" firstAttribute="top" secondItem="Z2o-5A-vQE" secondAttribute="top" constant="16" id="XEm-Ir-DcS"/>
+                <constraint firstItem="Z2o-5A-vQE" firstAttribute="trailing" secondItem="58Q-UU-tVf" secondAttribute="trailing" id="dke-Qf-dVt"/>
+                <constraint firstItem="rdh-PN-i97" firstAttribute="bottom" secondItem="Z2o-5A-vQE" secondAttribute="bottom" constant="-34" id="eTB-zb-hiZ"/>
+                <constraint firstItem="rdh-PN-i97" firstAttribute="leading" secondItem="Z2o-5A-vQE" secondAttribute="leading" id="f6U-8e-e8f"/>
+                <constraint firstItem="dp8-Lw-aB4" firstAttribute="bottom" secondItem="rdh-PN-i97" secondAttribute="top" id="i6Q-8e-twD"/>
+                <constraint firstItem="jzL-19-LLY" firstAttribute="top" secondItem="Chv-wQ-8jZ" secondAttribute="top" id="j6P-rl-sys"/>
+                <constraint firstItem="Z2o-5A-vQE" firstAttribute="trailing" secondItem="rdh-PN-i97" secondAttribute="trailing" id="jgE-kC-zSG"/>
+                <constraint firstAttribute="trailing" secondItem="ZHa-wD-4jg" secondAttribute="trailing" constant="16" id="ogh-Dz-9vO"/>
+                <constraint firstItem="Chv-wQ-8jZ" firstAttribute="leading" secondItem="c3L-NJ-vzZ" secondAttribute="trailing" constant="8" symbolic="YES" id="pse-zT-SA6"/>
+                <constraint firstItem="c3L-NJ-vzZ" firstAttribute="leading" secondItem="Z2o-5A-vQE" secondAttribute="leading" constant="16" id="q22-Kc-TKe"/>
+                <constraint firstItem="Ogf-YQ-EqU" firstAttribute="leading" secondItem="Z2o-5A-vQE" secondAttribute="leading" constant="40" id="q84-Qf-znD"/>
+                <constraint firstItem="Bow-Lp-lFJ" firstAttribute="centerX" secondItem="jQa-e5-5bg" secondAttribute="centerX" id="qq0-jr-xVq"/>
+                <constraint firstItem="c3L-NJ-vzZ" firstAttribute="top" secondItem="Chv-wQ-8jZ" secondAttribute="top" id="tkD-Ea-DzB"/>
+                <constraint firstItem="Wfr-0V-uuo" firstAttribute="centerY" secondItem="dp8-Lw-aB4" secondAttribute="centerY" multiplier="0.75" id="yYT-hY-9Wk"/>
+                <constraint firstItem="Ogf-YQ-EqU" firstAttribute="top" secondItem="Bow-Lp-lFJ" secondAttribute="bottom" constant="32" id="zt8-C1-rbK"/>
+            </constraints>
+            <point key="canvasLocation" x="-199" y="575"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="philips_equipment_icon_help" width="17" height="17"/>
+        <image name="philips_equipment_icon_video" width="161" height="161"/>
+        <image name="philips_home_iocn_battery" width="20" height="18"/>
+        <image name="philips_home_iocn_wifi" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  2021-Philips
+  Created by zhaona on 2019/3/26.
+  Copyright © 2019年 com.Kaadas. All rights reserved.
+*/
+
+/*
+ 
+ 新建Philips EasyKey+国际化
+ 
+ */
+// addDevice
+
+"Confirm_administrator_password" = "Confirm administrative password";
+"Enter_the_confirmation_password" = "Please enter the door lock administrator password for confirmation";
+
+/*
+ 
+ 以下为凯迪仕智能国际化
+ 
+ */
+
+"新增张快照，请下拉刷新" = "Please scroll down to refresh the new %lu snapshots";

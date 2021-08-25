@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="328" id="KGk-i7-Jjw" customClass="PLPLockMsgThreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="328"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="328"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日门锁统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6q-aZ-xZP">
+                        <rect key="frame" x="15" y="15" width="388" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7I4-Gx-lN6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_message_img_statistical" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-4v-wAt">
+                        <rect key="frame" x="139" y="65" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="Uz9-tl-wyD"/>
+                            <constraint firstAttribute="height" constant="140" id="sU8-QM-bxW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20条" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-oe-btM">
+                        <rect key="frame" x="169" y="108" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="V71-iJ-FxR"/>
+                            <constraint firstAttribute="width" constant="80" id="XD2-vW-HOE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日门锁消息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H47-qb-xUt">
+                        <rect key="frame" x="159" y="153" width="100" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="aa0-3G-X0h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KjF-4v-wAt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0KP-u6-3x6"/>
+                    <constraint firstItem="eZS-oe-btM" firstAttribute="top" secondItem="i6q-aZ-xZP" secondAttribute="bottom" constant="73" id="6Wz-YU-izw"/>
+                    <constraint firstItem="i6q-aZ-xZP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EAW-8P-qGc"/>
+                    <constraint firstItem="H47-qb-xUt" firstAttribute="top" secondItem="eZS-oe-btM" secondAttribute="bottom" constant="5" id="Geh-Gc-W2A"/>
+                    <constraint firstAttribute="trailing" secondItem="i6q-aZ-xZP" secondAttribute="trailing" constant="15" id="R6Z-w6-6vq"/>
+                    <constraint firstItem="i6q-aZ-xZP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ygt-Gw-Zic"/>
+                    <constraint firstItem="KjF-4v-wAt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eJ3-v9-pFw"/>
+                    <constraint firstItem="KjF-4v-wAt" firstAttribute="top" secondItem="i6q-aZ-xZP" secondAttribute="bottom" constant="30" id="fT5-67-gKP"/>
+                    <constraint firstItem="eZS-oe-btM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nBu-gj-yvD"/>
+                    <constraint firstItem="eZS-oe-btM" firstAttribute="centerX" secondItem="H47-qb-xUt" secondAttribute="centerX" id="uYl-gF-wPq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lockMsgCountLb" destination="eZS-oe-btM" id="Py8-lW-V8I"/>
+                <outlet property="msgTipsLb" destination="H47-qb-xUt" id="NYr-7a-4Hh"/>
+                <outlet property="tipsImgView" destination="KjF-4v-wAt" id="g6E-tE-dyP"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="184.82142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="philips_message_img_statistical" width="140" height="140"/>
+    </resources>
+</document>

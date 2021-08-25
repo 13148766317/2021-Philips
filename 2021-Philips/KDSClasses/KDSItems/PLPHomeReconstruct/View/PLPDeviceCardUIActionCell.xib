@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PLPDeviceUIActionCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3T-es-2j1">
+                        <rect key="frame" x="0.0" y="50" width="60" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="dDJ-8U-eU8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_home_icon_message" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-Jf-CcN">
+                        <rect key="frame" x="15" y="14" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Grl-8C-chw"/>
+                            <constraint firstAttribute="height" constant="30" id="Qb4-LB-9UY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="m3T-es-2j1" secondAttribute="bottom" id="Acl-m0-CQm"/>
+                <constraint firstItem="m3T-es-2j1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R2l-9m-ys3"/>
+                <constraint firstAttribute="trailing" secondItem="m3T-es-2j1" secondAttribute="trailing" id="Xyj-df-q8C"/>
+                <constraint firstItem="rQ8-Jf-CcN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bQB-8M-B24"/>
+                <constraint firstItem="m3T-es-2j1" firstAttribute="top" secondItem="rQ8-Jf-CcN" secondAttribute="bottom" constant="6" id="sCI-DB-hHb"/>
+            </constraints>
+            <size key="customSize" width="74" height="76"/>
+            <connections>
+                <outlet property="ivImage" destination="rQ8-Jf-CcN" id="1bp-Ca-nsc"/>
+                <outlet property="labTitle" destination="m3T-es-2j1" id="HOJ-cA-GQ3"/>
+            </connections>
+            <point key="canvasLocation" x="7.2463768115942031" y="104.46428571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="philips_home_icon_message" width="42" height="42"/>
+    </resources>
+</document>

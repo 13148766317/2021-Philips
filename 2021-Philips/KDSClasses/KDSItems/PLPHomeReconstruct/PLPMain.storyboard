@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsz-GC-Kyo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home DevicesVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PLPHomeDevicesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PLPHomeDevicesVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPf-r1-veW" userLabel="headerView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_home_header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-1i-Ck5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="philips_home_img" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-v9-khM">
+                                        <rect key="frame" x="0.0" y="43" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="pNn-tW-Coh"/>
+                                            <constraint firstAttribute="height" constant="60" id="xg5-wg-3qY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回家" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKE-87-8wb">
+                                        <rect key="frame" x="60" y="43" width="89.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philips EasyKey+守护您的安全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IR-HW-3fC">
+                                        <rect key="frame" x="60" y="73.5" width="220" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-i8-lLB">
+                                        <rect key="frame" x="368" y="38.5" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="YtP-rR-jTh"/>
+                                            <constraint firstAttribute="width" constant="36" id="lce-EI-zSb"/>
+                                        </constraints>
+                                        <state key="normal" image="philips_home_icon_add"/>
+                                        <connections>
+                                            <action selector="addDeviceAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1w-bh-xMy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstItem="fpw-1i-Ck5" firstAttribute="trailing" secondItem="YPf-r1-veW" secondAttribute="trailing" id="2d6-cx-dQ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="3IR-HW-3fC" secondAttribute="bottom" constant="40" id="ANY-Qb-DXe"/>
+                                    <constraint firstItem="fpw-1i-Ck5" firstAttribute="top" secondItem="YPf-r1-veW" secondAttribute="top" id="Atw-kg-rMi"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpw-1i-Ck5" secondAttribute="bottomMargin" constant="8" id="DZG-Z9-Axq"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgZ-i8-lLB" secondAttribute="trailing" constant="10" id="G61-q5-DDi"/>
+                                    <constraint firstItem="cgZ-i8-lLB" firstAttribute="centerY" secondItem="sKE-87-8wb" secondAttribute="centerY" id="HfN-o4-nfB"/>
+                                    <constraint firstItem="3IR-HW-3fC" firstAttribute="leading" secondItem="YPf-r1-veW" secondAttribute="leading" constant="60" id="Ktb-0G-emI"/>
+                                    <constraint firstItem="3IR-HW-3fC" firstAttribute="top" secondItem="sKE-87-8wb" secondAttribute="bottom" constant="4" id="XPb-1r-g27"/>
+                                    <constraint firstItem="PJd-v9-khM" firstAttribute="leading" secondItem="YPf-r1-veW" secondAttribute="leading" id="YtS-ZY-VaK"/>
+                                    <constraint firstAttribute="height" constant="133" id="bLY-Rf-ExD"/>
+                                    <constraint firstItem="sKE-87-8wb" firstAttribute="leading" secondItem="YPf-r1-veW" secondAttribute="leading" constant="60" id="qHq-Nc-60b"/>
+                                    <constraint firstItem="fpw-1i-Ck5" firstAttribute="leading" secondItem="YPf-r1-veW" secondAttribute="leading" id="tKY-Dt-9k4"/>
+                                    <constraint firstItem="PJd-v9-khM" firstAttribute="top" secondItem="sKE-87-8wb" secondAttribute="top" id="uqd-U4-ahi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5T-PD-ytK" userLabel="categoryView">
+                                <rect key="frame" x="0.0" y="149" width="414" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-bR-wmA">
+                                        <rect key="frame" x="368" y="2" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="F4U-72-yhJ"/>
+                                            <constraint firstAttribute="height" constant="36" id="jhp-Yt-Dno"/>
+                                        </constraints>
+                                        <state key="normal" image="philips_home_icon_list_default"/>
+                                        <state key="selected" image="philips_home_icon_list_selected"/>
+                                        <connections>
+                                            <action selector="changeDeviceView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNy-TT-0Bq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHe-m6-Nk7">
+                                        <rect key="frame" x="332" y="2" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="9R3-hP-HWy"/>
+                                            <constraint firstAttribute="width" constant="36" id="RZA-TR-tab"/>
+                                        </constraints>
+                                        <state key="normal" image="philips_home_icon_card_default"/>
+                                        <state key="selected" image="philips_home_icon_card_selected"/>
+                                        <connections>
+                                            <action selector="changeDeviceView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm7-mM-Kd0"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6K-Th-wDe" userLabel="categoryContainerView" customClass="PLPHomeCategoryView">
+                                        <rect key="frame" x="14" y="5" width="310" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Pkq-bh-Ohu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cbs-a3-qS4"/>
+                                    <constraint firstItem="W6K-Th-wDe" firstAttribute="leading" secondItem="v5T-PD-ytK" secondAttribute="leading" constant="14" id="DBJ-3Z-AaR"/>
+                                    <constraint firstItem="W6K-Th-wDe" firstAttribute="centerY" secondItem="v5T-PD-ytK" secondAttribute="centerY" id="WxM-Fl-9th"/>
+                                    <constraint firstAttribute="trailing" secondItem="f1W-bR-wmA" secondAttribute="trailing" constant="10" id="ixE-FC-spZ"/>
+                                    <constraint firstItem="f1W-bR-wmA" firstAttribute="leading" secondItem="uHe-m6-Nk7" secondAttribute="trailing" id="mXx-pI-tq7"/>
+                                    <constraint firstItem="f1W-bR-wmA" firstAttribute="centerY" secondItem="v5T-PD-ytK" secondAttribute="centerY" id="mwf-Du-w4z"/>
+                                    <constraint firstItem="uHe-m6-Nk7" firstAttribute="centerY" secondItem="v5T-PD-ytK" secondAttribute="centerY" id="pjZ-Cz-rPc"/>
+                                    <constraint firstItem="W6K-Th-wDe" firstAttribute="trailing" secondItem="uHe-m6-Nk7" secondAttribute="leading" constant="-8" id="z3t-CV-WB1"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzK-F3-CLh">
+                                <rect key="frame" x="0.0" y="197" width="414" height="616"/>
+                                <connections>
+                                    <segue destination="ST8-S7-Obq" kind="embed" identifier="PLPDeviceListVC" id="Ksg-o7-l7b"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-RT-9rY">
+                                <rect key="frame" x="0.0" y="197" width="414" height="616"/>
+                                <connections>
+                                    <segue destination="Fam-dx-rns" kind="embed" identifier="PLPDeviceCardsVC" id="uZi-fZ-cCQ"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sF-av-8iH" customClass="PLPHomeNoDeviceView">
+                                <rect key="frame" x="0.0" y="197" width="414" height="616"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FzK-F3-CLh" firstAttribute="top" secondItem="v5T-PD-ytK" secondAttribute="bottom" constant="8" id="0gP-WU-wwt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FzK-F3-CLh" secondAttribute="bottom" id="6JG-hF-Ap5"/>
+                            <constraint firstItem="v5T-PD-ytK" firstAttribute="top" secondItem="YPf-r1-veW" secondAttribute="bottom" constant="16" id="7ae-Bf-60T"/>
+                            <constraint firstItem="6sF-av-8iH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DHG-mS-JdM"/>
+                            <constraint firstItem="YPf-r1-veW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FnZ-6K-HPG"/>
+                            <constraint firstItem="6sF-av-8iH" firstAttribute="top" secondItem="v5T-PD-ytK" secondAttribute="bottom" constant="8" symbolic="YES" id="Fu3-X1-mRI"/>
+                            <constraint firstItem="BiE-RT-9rY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L4W-aE-sWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v5T-PD-ytK" secondAttribute="trailing" id="Qfa-8H-iuA"/>
+                            <constraint firstItem="BiE-RT-9rY" firstAttribute="top" secondItem="v5T-PD-ytK" secondAttribute="bottom" constant="8" id="SDW-0h-GME"/>
+                            <constraint firstItem="BiE-RT-9rY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XTQ-kY-izz"/>
+                            <constraint firstItem="6sF-av-8iH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bVo-u3-r8M"/>
+                            <constraint firstItem="v5T-PD-ytK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iti-nc-oHn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YPf-r1-veW" secondAttribute="trailing" id="kry-kV-qZR"/>
+                            <constraint firstItem="6sF-av-8iH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="miJ-4M-liA"/>
+                            <constraint firstItem="BiE-RT-9rY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ofP-Vn-May"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FzK-F3-CLh" secondAttribute="trailing" id="s1H-C9-hrG"/>
+                            <constraint firstItem="YPf-r1-veW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tCw-96-zbs"/>
+                            <constraint firstItem="FzK-F3-CLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tRY-a7-smN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FzB-b4-FY7"/>
+                    <connections>
+                        <outlet property="btnAddDevice" destination="cgZ-i8-lLB" id="ree-dT-BTt"/>
+                        <outlet property="btnCardView" destination="uHe-m6-Nk7" id="m1t-ZP-fGM"/>
+                        <outlet property="btnListView" destination="f1W-bR-wmA" id="1bS-W1-D5d"/>
+                        <outlet property="deviceCardContainerView" destination="BiE-RT-9rY" id="pZA-EX-vVa"/>
+                        <outlet property="deviceListContainerView" destination="FzK-F3-CLh" id="Pnf-mK-8Ct"/>
+                        <outlet property="homeCategoryView" destination="W6K-Th-wDe" id="9zF-SG-aAb"/>
+                        <outlet property="noDeviceView" destination="6sF-av-8iH" id="DCQ-OU-KsY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-413" y="-197"/>
+        </scene>
+        <!--卡片-->
+        <scene sceneID="Rfh-KH-52A">
+            <objects>
+                <pageViewController storyboardIdentifier="PLPDeviceCardsVC" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Fam-dx-rns" customClass="PLPDeviceCardsVC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="卡片" image="philips_home_icon_card_selected" id="pxb-O8-rAR"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-gR-3wK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="-354"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vhS-4w-pPO">
+            <objects>
+                <tabBarController id="tsz-GC-Kyo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OZS-lf-XeI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ST8-S7-Obq" kind="relationship" relationship="viewControllers" destinationCreationSelector="demoDeviceListVC" id="doI-DN-cbd"/>
+                        <segue destination="Fam-dx-rns" kind="relationship" relationship="viewControllers" destinationCreationSelector="demoDeviceCardsVC" id="ZbV-0M-UVn"/>
+                        <segue destination="F82-zw-2vc" kind="relationship" relationship="viewControllers" id="Xvt-xS-CWv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0C0-Hh-qFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1549" y="690"/>
+        </scene>
+        <!--列表-->
+        <scene sceneID="gZV-pZ-rC0">
+            <objects>
+                <viewController storyboardIdentifier="PLPDeviceListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ST8-S7-Obq" customClass="PLPDeviceListVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5fh-QM-ZHH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="616"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="106" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="DjI-zJ-h1H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="572"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gJ8-ln-JW1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJ8-ln-JW1" firstAttribute="bottom" secondItem="DjI-zJ-h1H" secondAttribute="bottom" id="K6K-wq-Rcn"/>
+                            <constraint firstItem="gJ8-ln-JW1" firstAttribute="trailing" secondItem="DjI-zJ-h1H" secondAttribute="trailing" id="aS8-uE-sKm"/>
+                            <constraint firstItem="DjI-zJ-h1H" firstAttribute="leading" secondItem="gJ8-ln-JW1" secondAttribute="leading" id="gsY-wE-Zhq"/>
+                            <constraint firstItem="DjI-zJ-h1H" firstAttribute="top" secondItem="gJ8-ln-JW1" secondAttribute="top" id="tUl-aU-ggE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="列表" image="philips_home_icon_list_default" id="xuX-hW-Ou2"/>
+                    <connections>
+                        <outlet property="tableView" destination="DjI-zJ-h1H" id="cd0-iN-jOZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDV-Pr-Ucs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="234"/>
+        </scene>
+        <!--DeviceVC-->
+        <scene sceneID="KT3-pW-qCZ">
+            <objects>
+                <viewController storyboardIdentifier="PLPDeviceTempVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rTd-dj-I5j" customClass="PLPDeviceVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sey-vt-5q9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UDc-oh-Bxb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8s-ss-crF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4681" y="729"/>
+        </scene>
+        <!--Temp-->
+        <scene sceneID="HYj-eR-Lu4">
+            <objects>
+                <viewController storyboardIdentifier="PLPDeviceListTempVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cah-e8-sYf" customClass="PLPDeviceListTempVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1a-r0-6hn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-RF-ffE">
+                                <rect key="frame" x="184" y="92" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zHt-Yx-IFe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-s0-tQf">
+                                <rect key="frame" x="186" y="808" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FCe-Be-ouk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rhP-RF-ffE" firstAttribute="top" secondItem="FCe-Be-ouk" secondAttribute="top" constant="48" id="1Ih-Oj-1Ru"/>
+                            <constraint firstItem="FCe-Be-ouk" firstAttribute="bottom" secondItem="yGq-s0-tQf" secondAttribute="bottom" constant="33" id="1JF-Cq-gZk"/>
+                            <constraint firstItem="rhP-RF-ffE" firstAttribute="centerX" secondItem="X1a-r0-6hn" secondAttribute="centerX" id="O0R-z2-gyL"/>
+                            <constraint firstItem="yGq-s0-tQf" firstAttribute="centerX" secondItem="X1a-r0-6hn" secondAttribute="centerX" id="WtY-9u-DGQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Temp" id="zXk-VM-5K7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGh-N4-63Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="-585"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="YTO-g9-aYT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="F82-zw-2vc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="philips_icon_home_default" id="dKN-bY-9Uw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wvg-RV-45c">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3Xd-0E-apb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5SH-7q-az4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1548" y="-198"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ksg-o7-l7b"/>
+        <segue reference="uZi-fZ-cCQ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="philips_home_header_bg" width="375" height="133"/>
+        <image name="philips_home_icon_add" width="22" height="22"/>
+        <image name="philips_home_icon_card_default" width="18" height="18"/>
+        <image name="philips_home_icon_card_selected" width="18" height="18"/>
+        <image name="philips_home_icon_list_default" width="18" height="18"/>
+        <image name="philips_home_icon_list_selected" width="18" height="18"/>
+        <image name="philips_home_img" width="32" height="32"/>
+        <image name="philips_icon_home_default" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
